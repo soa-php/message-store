@@ -33,7 +33,9 @@ abstract class ErrorMessageHandler
 
     public function handleMessage(Message $message): void
     {
-        $this->tracker->track($message);
+        if(!$this->tracker->trackedAt($message)){
+            $this->tracker->track($message);
+        }
 
         $nowTime             = $this->clock->now();
         $firstAttemptTime    = $this->tracker->trackedAt($message);
