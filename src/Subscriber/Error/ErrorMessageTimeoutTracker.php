@@ -10,7 +10,7 @@ interface ErrorMessageTimeoutTracker
 {
     public function track(Message $message): void;
 
-    public function trackedAt(Message $message): \DateTimeImmutable;
+    public function trackedAt(Message $message): ?\DateTimeImmutable;
 
     public function untrack(Message $message): void;
 }

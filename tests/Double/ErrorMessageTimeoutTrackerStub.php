@@ -34,7 +34,7 @@ class ErrorMessageTimeoutTrackerStub implements ErrorMessageTimeoutTracker
         $this->trackedMessages[$message->id()] = $this->trackedAt;
     }
 
-    public function trackedAt(Message $message): \DateTimeImmutable
+    public function trackedAt(Message $message): ?\DateTimeImmutable
     {
         return $this->trackedMessages[$message->id()];
     }
