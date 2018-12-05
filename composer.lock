@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd3c1d6401d5eb0fd7ef7d44376a0305",
+    "content-hash": "1f0b0a377abda57ad3da73d6a540754d",
     "packages": [
         {
             "name": "psr/container",
@@ -145,16 +145,16 @@
         },
         {
             "name": "soa-php/clock",
-            "version": "1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/soa-php/clock.git",
-                "reference": "79a8218c30a224f59f5fa45f313f6024ae5e5e65"
+                "reference": "14a4ae4601e2ff2386cda33012ae20ddea29f246"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/soa-php/clock/zipball/79a8218c30a224f59f5fa45f313f6024ae5e5e65",
-                "reference": "79a8218c30a224f59f5fa45f313f6024ae5e5e65",
+                "url": "https://api.github.com/repos/soa-php/clock/zipball/14a4ae4601e2ff2386cda33012ae20ddea29f246",
+                "reference": "14a4ae4601e2ff2386cda33012ae20ddea29f246",
                 "shasum": ""
             },
             "require": {
@@ -171,7 +171,7 @@
                 "MIT"
             ],
             "description": "Manage time in a decoupled way",
-            "time": "2018-12-05T01:35:48+00:00"
+            "time": "2018-12-05T02:04:15+00:00"
         }
     ],
     "packages-dev": [
@@ -1586,7 +1586,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "soa-php/clock": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
